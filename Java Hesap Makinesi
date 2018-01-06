@@ -1,0 +1,75 @@
+import java.util.Scanner;
+
+public class sanalza_hesap_makinesi
+
+{
+
+public static void main(String[] args)
+
+{
+
+Scanner girdi=new Scanner(System.in);
+
+int birinci_sayi, ikinci_sayi;
+
+System.out.print("İlk sayıyı giriniz:");
+
+birinci_sayi=girdi.nextInt();
+
+System.out.print("İkinci sayıyı giriniz:");
+
+ikinci_sayi=girdi.nextInt();
+
+ 
+
+int islem, sonuc;
+
+System.out.print("Toplama işlemi için 1'e, çıkarma işlemi için 2'ye, çarpma için 3'e ve bölme işlemi için 4'e basınız.")
+
+islem=girdi.nextInt();
+
+ 
+
+if(islem==1)
+
+{
+
+  sonuc=birinci_sayi+ikinci_sayi;
+
+  System.out.printf("Toplama işlemini seçtiniz, sonuç=%d", sonuc);
+
+}
+
+if(islem==2)
+
+{
+
+  sonuc=birinci_sayi-ikinci_sayi;
+
+  System.out.printf("Çıkarma işlemini seçtiniz, sonuç=%d", sonuc);
+
+}
+
+if(islem==3)
+
+{
+
+  sonuc=birinci_sayi*ikinci_sayi;
+
+  System.out.printf("Çarpma işlemini seçtiniz, sonuç=%d", sonuc);
+
+}
+
+if(islem==4)
+
+{
+
+  sonuc=birinci_sayi/ikinci_sayi;
+
+  System.out.printf("Bölme işlemini seçtiniz, sonuç=%d", sonuc);
+
+}
+
+}
+
+}
